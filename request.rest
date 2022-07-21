@@ -1,0 +1,69 @@
+GET http://localhost:3000/livros
+
+###
+
+GET http://localhost:3000/livros-autor?autor=62d962e05e1be22910bc5020
+
+###
+
+GET http://localhost:3000/livros/62d6a35d7ca74030000a297d
+
+
+###
+
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+    "titulo": "As cronicas do gelo e do fogo , a guerra dos tronos",
+    "autor":"62d962e05e1be22910bc5020",
+    "numeroPaginas": 500,
+    "editora":"leya"
+}
+
+###
+
+PUT http://localhost:3000/livros/62d6a35d7ca74030000a297d
+Content-Type: application/json
+
+{
+    "titulo":"as cronias do gelo e do fogo"
+}
+
+###
+
+DELETE http://localhost:3000/livros/62d94d379d853b580b03fa55
+
+###
+
+
+
+GET http://localhost:3000/autores
+
+###
+
+GET http://localhost:3000/autor/62d962e05e1be22910bc5020
+
+
+###
+
+POST http://localhost:3000/autor
+Content-Type: application/json
+
+{
+    "nome": "RR Martin",
+    "nacionalidade":"Finlandia"
+}
+
+###
+
+PUT http://localhost:3000/autor/62d962265e1be22910bc5018
+Content-Type: application/json
+
+{
+    "nacionalidade":"Brasileiro"
+}
+
+###
+
+DELETE http://localhost:3000/autor/62d962265e1be22910bc5018
